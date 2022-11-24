@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="../dist/output.css">
+    <link rel="stylesheet" href="../dist/style.css">
+    <link rel="stylesheet" href="../fa/v6/css/all.css">
+    <link rel="stylesheet" href="../tailwind/v2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Candal&family=Lora&display=swap" rel="stylesheet">
+
+
+
+</head>
+<body class="bg-[#f6f6f6]">
+    <!-- #354052 -->
+    <header class="bg-black text-white h-[66px] flex items-center ">
+        <div class="logo flex-grow  ml-[2em]">
+            <h1 class="logo-text text-5xl">News<span class="text-fuchsia-800 italic">gist</span></h1>
+        </div>
+
+
+        <div class=" mr-5 text-white toggle" id="toggle1">
+            <i class="fa fa-bars md:hidden fa-2x " onclick="bars(this)"></i>
+            
+        </div> 
+
+
+        <ul class="md:mr-[30px] relative  md:bg-black shadow-lg  md:opacity-100 opacity-0 top-[-400px] md:top-0 z-20" id="ul">
+            <div class="md:relative absolute top-10 md:top-0 right-[1px] bg-white md:bg-black text-black md:text-white ">
+                <li><a href="#" class="hover:text-fuchsia-800 duration-1000">Home</a></li> 
+                <li><a href="#" class="hover:text-fuchsia-800 duration-1000">About</a></li>
+                <li><a href="#" class="hover:text-fuchsia-800 duration-1000">Services</a></li>
+                <!-- <li><a href="#">Sign up</a></li>
+                <li><a href="#">Login</a></li>  -->
+                <li>
+                    <a href="#" class="" onclick="dropdown()">
+                        <i class="fa fa-user "></i>
+                        User
+                        <span class="text-sm md:rotate-180" id="arrow">
+                            <i class="fa fa-chevron-down "></i>
+                        </span>
+                    </a>
+                    <div class="main relative" id="submenu">
+                       <div class="absolute  md:top-[12px] bg-white shadow main1 w-[110px] md:w-[150px]">
+                            <a href="#" class="hover:bg-[#d5d6d6] text-[#444]">Dashboard</a>
+                            <a href="#" class="hover:bg-[#d5d6d6] text-red-500">Logout</a>
+                       </div>  
+        
+                    </div>
+                </li>  
+            </div>
+        </ul>
+    </header>
+
+    <script src="../script/header.js"></script>
+</body>
+</html>

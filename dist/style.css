@@ -1,0 +1,137 @@
+#form{
+    padding: 30px 40px;
+}
+.form-control{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+}
+.form-control label{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.form-control input{
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+}
+.form button{
+    background-color: rgb(134 25 143 / var(--tw-bg-opacity));
+    border: 2px solid  rgb(134 25 143 / var(--tw-bg-opacity));
+    color: white;
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 25px;
+}
+
+html,
+body{
+    height: 100%;
+    font-family: 'lora',serif;
+}
+.logo-text{
+    font-family: 'candal', serif;
+}
+header ul li{
+    display: inline-block;
+}
+
+header ul li a{
+    display: block;
+    padding:10px 25px;
+    font-size: 1.1em;
+}
+
+
+
+       /* recent post  */
+
+/* .content{
+    border: 1px solid red;
+} */
+/* .content .main-content{
+    border:  1px solid blue;
+} */
+/* .content .sidebar{
+    border:  1px solid green;
+} */
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.btn{
+    border: 1px solid  rgb(112 26 117 );
+}
+/* .read-more{
+    border: 1px solid #005255;
+    background: transparent;
+    border-radius: 0px;
+} */
+
+
+
+            /* side bar */
+.sidebar .section.topics ul {
+    border-top: 1px solid #e0e0e0;
+}
+
+.sidebar .section.topics ul li a {
+    border-bottom: 1px solid #e0e0e0;
+}
+.sidebar .section.topics ul li a:hover {
+    padding-left: 10px;
+    transition: all 0.3s;
+}
+
+
+
+        /* footer */
+.footer{
+    background-color: #303036;
+    color: #d3ded3;
+}
+
+/* .footer .footer-content{
+    border: 1px solid red;
+} */
+
+.footer .footer-bottom{
+    background: #343a40;
+    color: #686868;
+}
+
+/* .footer-section{
+    border: 1px solid white;
+} */
+/* .social-links{
+    border: 1px solid gray; 
+} */
+
+/* .footer .footer-content .links ul a {
+    transition: all .3s;
+} */
+
+.footer .footer-content .links ul a:hover {
+    
+    padding-left: 10px;
+    transition: all 0.3s;
+}
+
+.contact-input{
+    background: #272727;
+    color: white;
+    margin-bottom: 10px;
+    line-height: 1.5rem;
+    padding: .7rem 1.2rem;
+    font-family: 'lora',serif;
+}
+.contact-input:focus{
+    background: #1a1a1a;
+
+}
+
