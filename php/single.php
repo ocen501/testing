@@ -19,6 +19,9 @@
     <?php 
         include_once "../html/header.html";
     ?>
+            <!-- facebook page plugin SDK -->
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v15.0" nonce="lrVTrbsM"></script>
 
 
     <div class="page-wraper min-h-full">
@@ -29,19 +32,79 @@
 
                         <!-- recent post  -->
     <div class="content clearfix max-w-[90rem] mx-auto mt-[30px] mb-[30px] flex  flex-col md:flex-row">
-        <!-- in the above we used clearfix class in css to clear the floats on  content class  -->
-        <!-- so that the content will expand to contain the recent post and side bar -->
-        <div class="main-content  w-full md:w-9/12 float-left">
-            <div class="post-title">This is the title of the post</div>
+        <div class="main-content single w-full md:w-9/12 float-left rounded mb-5">
+            <h1 class="post-title font-extrabold text-3xl  text-center mb-[40px]">This is the title of the post</h1>
+
+            <div class="post-content">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore, voluptates.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita repudiandae debitis neque rerum quam delectus voluptate tempora voluptatem qui, necessitatibus consectetur ut aliquam odio ducimus, dignissimos, blanditiis saepe placeat odit?</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus magni impedit nam eveniet reprehenderit commodi mollitia modi, voluptate fugit voluptatum at quos a est quis quidem nostrum voluptatibus itaque soluta aperiam earum iure tempore, culpa exercitationem. Tempore dolorem sequi consequuntur.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, sint.</p>
+
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore, voluptates.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita repudiandae debitis neque rerum quam delectus voluptate tempora voluptatem qui, necessitatibus consectetur ut aliquam odio ducimus, dignissimos, blanditiis saepe placeat odit?</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus magni impedit nam eveniet reprehenderit commodi mollitia modi, voluptate fugit voluptatum at quos a est quis quidem nostrum voluptatibus itaque soluta aperiam earum iure tempore, culpa exercitationem. Tempore dolorem sequi consequuntur.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, sint.</p>
+
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore, voluptates.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita repudiandae debitis neque rerum quam delectus voluptate tempora voluptatem qui, necessitatibus consectetur ut aliquam odio ducimus, dignissimos, blanditiis saepe placeat odit?</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus magni impedit nam eveniet reprehenderit commodi mollitia modi, voluptate fugit voluptatum at quos a est quis quidem nostrum voluptatibus itaque soluta aperiam earum iure tempore, culpa exercitationem. Tempore dolorem sequi consequuntur.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, sint.</p>
+
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore, voluptates.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita repudiandae debitis neque rerum quam delectus voluptate tempora voluptatem qui, necessitatibus consectetur ut aliquam odio ducimus, dignissimos, blanditiis saepe placeat odit?</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus magni impedit nam eveniet reprehenderit commodi mollitia modi, voluptate fugit voluptatum at quos a est quis quidem nostrum voluptatibus itaque soluta aperiam earum iure tempore, culpa exercitationem. Tempore dolorem sequi consequuntur.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, sint.</p>
+
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore, voluptates.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita repudiandae debitis neque rerum quam delectus voluptate tempora voluptatem qui, necessitatibus consectetur ut aliquam odio ducimus, dignissimos, blanditiis saepe placeat odit?</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus magni impedit nam eveniet reprehenderit commodi mollitia modi, voluptate fugit voluptatum at quos a est quis quidem nostrum voluptatibus itaque soluta aperiam earum iure tempore, culpa exercitationem. Tempore dolorem sequi consequuntur.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, sint.</p>
+            </div>
         </div> 
+                            <!-- sidebar -->
+        <div class="sidebar single w-full md:w-4/12 float-left   p-[10px] py-0 px-[10px]">
+                            <!-- this is to enable someone like and share ur facebook page from ur website also can see ur timeline, message etc. -->
+            <div class="fb-page flex justify-center" data-href="https://www.facebook.com/facebook" data-tabs="" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote></div>
 
-        <div class="sidebar  w-full md:w-4/12 float-left h-[700px] md:h-[300px] p-[10px] ">
+            <div class="section popular bg-white mb-2 p-3 h-96 overflow-y-auto">
+                <h2 class="section-title text-2xl font-extrabold sticky top-0 bg-white shadow p-2 ">Popular</h2>
 
-         
+                <div class="post clearfix mt-[10px] pt-[10px] bg-no-repeat bg-cover bg-center">
+                    <img src="../images/man_thinking-removebg-preview (2).png" alt="" class="h-[100px] w-[100px] float-left mr-[10px] p-3">
+                    <div class="mt-[10px]">
+                        <a href="" class="title ">How to overcome your fears</a>
+                    </div>
+                </div>
 
+                <div class="post clearfix mt-[10px] pt-[10px] bg-no-repeat bg-cover bg-center">
+                    <img src="../images/man_thinking-removebg-preview (2).png" alt="" class="h-[100px] w-[100px] float-left mr-[10px] p-3">
+                    <div class="mt-[10px]">
+                        <a href="" class="title ">How to overcome your fears</a>
+                    </div>
+                </div>
+
+                <div class="post clearfix mt-[10px] pt-[10px] bg-no-repeat bg-cover bg-center">
+                    <img src="../images/man_thinking-removebg-preview (2).png" alt="" class="h-[100px] w-[100px] float-left mr-[10px] p-3">
+                    <div class="mt-[10px]">
+                        <a href="" class="title ">How to overcome your fears</a>
+                    </div>
+                </div>
+
+                <div class="post clearfix mt-[10px] pt-[10px] bg-no-repeat bg-cover bg-center">
+                    <img src="../images/man_thinking-removebg-preview (2).png" alt="" class="h-[100px] w-[100px] float-left mr-[10px] p-3">
+                    <div class="mt-[10px]">
+                        <a href="" class="title ">How to overcome your fears</a>
+                    </div>
+                </div>
+
+                
+
+             
+            </div>
 
             <div class="section topics bg-white p-[20px] rounded mb-[20px]">
-                <h2 class="section-title text-4xl  font-extrabold  mt-[10px] mb-[10px] mr-0 ml-0">Topics</h2>
+                <h2 class="section-title text-2xl  font-extrabold  mt-[10px] mb-[10px] mr-0 ml-0">Topics</h2>
                 <ul>
                     <li><a href="#" class="block p-[20px] pr-0 pl-0  duration-300">Poems</a></li>
                     <li><a href="#" class="block p-[20px] pr-0 pl-0  duration-300">quotes</a></li>
@@ -109,7 +172,7 @@
                 <form action="" method="POST">
                     <input type="email" name="email" class="text-input py-[.7rem] px-[.1rem] block w-full rounded text-[#444] contact-input" placeholder="Your email address...">
                     <textarea rows="4" name="message" id="" class="text-input py-[.7rem] px-[.1rem] block w-full rounded text-[#444] contact-input" placeholder="Your message..."></textarea>
-                    <button type="submit" class="btn btn-big flex justify-center items-center  py-[.5rem] px-[1rem] text-white bg-fuchsia-800 read-more md:mb-0 mb-2 float-right">
+                    <button type="submit" class="btn btn-big flex justify-center items-center  py-[.5rem] px-[1rem] text-white bg-fuchsia-800 read-more md:mb-2 mb-2 float-right">
                         <i class="fas fa-envelope"></i>
                         <p class="ml-2">send</p> 
                     </button>
@@ -117,7 +180,7 @@
             </div>
         </div>
 
-        <div class="footer-bottom  h-[50px] text-center absolute bottom-0 left-0 pt-[20px] w-full">
+        <div class="footer-bottom  text-center absolute bottom-0 left-0  w-full">
             &copy; coding.com | Designed by Admin
         </div>
     </div>

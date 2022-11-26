@@ -10,49 +10,60 @@
     <link rel="stylesheet" href="../fa/v6/css/all.css">
     <link rel="stylesheet" href="../tailwind/v2.css">
 </head>
-<body class="bg-fuchsia-800 flex items-center justify-center min-h-screen text-gray-700">
-    <section class=" bg-white rounded shadow-2xl w-[400px] max-w-[100%] overflow-hidden ">
-        <div class="bg-[#f7f7f7] py-[20px] px-[40px] flex items-center ">
-            <i class="fa fa-user-plus fa-2x"></i>
-            <h2 class="ml-2 text-3xl font-semibold">
-                Create account
-            </h2>
+<body class="">
+    <?php 
+        include_once "../html/header.html";
+    ?>
+
+    <section class="bg-[#f6f6f6] flex items-center justify-center min-h-screen text-gray-700">
+        <div class=" bg-white rounded shadow-2xl w-[400px] max-w-[100%] overflow-hidden ">
+            <div class="bg-[#f7f7f7] py-[20px] px-[40px] flex items-center ">
+                <i class="fa fa-user-plus fa-2x"></i>
+                <h2 class="ml-2 text-3xl font-semibold">
+                    Create account
+                </h2>
+            </div>
+
+            <form class="form" id="form">
+                <!-- success -->
+                <!-- <div class="msg error w-full mt-[3px] mb-[2px] mx-auto p-2 rounded list-none ">
+                    <li>Username required</li>
+                </div> -->
+
+                <div class="form-control">
+                    <i class="fa fa-user"></i>
+                    <label for="Username">Username</label>
+                    <input type="text" placeholder="username" required>
+                </div>
+
+                <div class="form-control">
+                    <i class="fa fa-envelope"></i>
+                    <label for="Username">Email</label>
+                    <input type="text" placeholder="Email" required>
+                </div>
+
+                <div class="form-control">
+                    <i class="fa fa-key"></i>
+                    <label for="Username">Password</label>
+                    <input type="text" placeholder="Password" required>
+                </div>
+
+                <div class="form-control">
+                    <i class="fa fa-check-circle"></i>
+                    <label for="Username">Confirm Password</label>
+                    <input type="text" placeholder="Confirm Password" required>
+                </div>
+
+                <div class="mb-4">
+                    <input type="checkbox" name="agree" id="agree" required>
+                    <label for="agree" class="mb-2 text-sm font-sans"> Do you agree to our Terms and Conditions if so click here! </label>
+                </div>
+                <button class="">submit</button>
+                <div class="mb-4 mt-4 text-center">
+                    <a href="login.php" class="hover:underline">Already have an account? Click to Login</a>
+                </div>
+            </form>
         </div>
-
-        <form class="form" id="form">
-            <div class="form-control">
-                <i class="fa fa-user"></i>
-                <label for="Username">Username</label>
-                <input type="text" placeholder="username" required>
-            </div>
-
-            <div class="form-control">
-                <i class="fa fa-envelope"></i>
-                <label for="Username">Email</label>
-                <input type="text" placeholder="Email" required>
-            </div>
-
-            <div class="form-control">
-                <i class="fa fa-key"></i>
-                <label for="Username">Password</label>
-                <input type="text" placeholder="Password" required>
-            </div>
-
-            <div class="form-control">
-                <i class="fa fa-check-circle"></i>
-                <label for="Username">Confirm Password</label>
-                <input type="text" placeholder="Confirm Password" required>
-            </div>
-
-            <div class="mb-4">
-                <input type="checkbox" name="agree" id="agree" required>
-                <label for="agree" class="mb-2 text-sm font-sans"> Do you agree to our Terms and Conditions if so click here! </label>
-            </div>
-            <button class="">submit</button>
-            <div class="mb-4 mt-4 text-center">
-                <a href="login.php" class="hover:underline">Already have an account? Click to Login</a>
-            </div>
-        </form>
     </section>
 </body>
 </html>

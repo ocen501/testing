@@ -1,0 +1,29 @@
+ .admin-wraper{
+    height: calc(100% - 66px);
+    display: flex;
+ }
+ .admin-wraper .left-sidebar{
+    flex: 2;
+    /* border: 1px solid red; */
+    /* background: #234a57; */
+    background: gray;
+ }
+ .admin-wraper .admin-content{
+    flex: 8;
+    /* border: 1px solid green; */
+ }
+
+ .admin-wraper .left-sidebar ul li a{
+    /* border-bottom: 1px solid red; */
+    border-bottom: 1px solid rgb(31 41 55 / var(--tw-bg-opacity));
+ }
+
+ table{
+    font-size: 1.1rem;   
+ }
+
+ th, td{
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #d3d3d3;
+ }

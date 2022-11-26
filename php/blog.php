@@ -304,15 +304,15 @@
                 <form action="" method="POST">
                     <input type="email" name="email" class="text-input py-[.7rem] px-[.1rem] block w-full rounded text-[#444] contact-input" placeholder="Your email address...">
                     <textarea rows="4" name="message" id="" class="text-input py-[.7rem] px-[.1rem] block w-full rounded text-[#444] contact-input" placeholder="Your message..."></textarea>
-                    <button type="submit" class="btn btn-big flex justify-center items-center  py-[.5rem] px-[1rem] text-white bg-fuchsia-800 read-more md:mb-0 mb-2 float-right">
+                    <button type="submit" class="btn btn-big flex justify-center items-center  py-[.5rem] px-[1rem] text-white bg-fuchsia-800 read-more md:mb-2 mb-2 float-right ">
                         <i class="fas fa-envelope"></i>
-                        <p class="ml-2">send</p> 
+                        <p class="ml-2 ">send</p> 
                     </button>
                 </form>
             </div>
         </div>
 
-        <div class="footer-bottom  h-[50px] text-center absolute bottom-0 left-0 pt-[20px] w-full">
+        <div class="footer-bottom  text-center absolute bottom-0 left-0  w-full">
             &copy; coding.com | Designed by Admin
         </div>
     </div>
